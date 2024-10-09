@@ -1,0 +1,63 @@
+Id,Title,Category,Diagram,Interaction,State,Description,Justification,Inferrable data types,# data types,Physical safety,Mental wellbeing,Priority
+777,Spoofing the Human User External Entity,Spoofing,L0: Clinic,user_sensor_data,Needs Investigation,Human User may be spoofed by an attacker and this may lead to unauthorized access to Meta Quest 2. Consider using a standard authentication mechanism to identify the external entity.,,"PII
+Sytem fingerprint data
+VR sensory data
+VR input data
+VR output data
+Application data
+Financial data
+Social activity
+Logging & auditing",9,,,Very High
+864,Spoofing the Human User External Entity,Spoofing,L0: Clinic,controller_inputs,Needs Investigation,Human User may be spoofed by an attacker and this may lead to unauthorized access to Meta Quest Touch controllers. Consider using a standard authentication mechanism to identify the external entity.,,,0,,,None
+799,Data Flow networked_content Is Potentially Interrupted,Denial Of Service,L0: Clinic,networked_content,Needs Investigation,An external agent interrupts data flowing across a trust boundary in either direction.,,,0,Disorientation,,Medium
+901,XML DTD and XSLT Processing,Tampering,L0: Clinic,local_networked_content,Needs Investigation,"If a dataflow contains XML, XML processing threats (DTD and XSLT code execution) may be exploited.",,"PII
+Sytem fingerprint data
+VR sensory data
+Application data
+Financial data
+Social activity
+Logging & auditing",7,Disorientation,Inconvenient,Very High
+792,Data Flow networked_telemetry Is Potentially Interrupted,Denial Of Service,L0: Clinic,networked_telemetry,Needs Investigation,An external agent interrupts data flowing across a trust boundary in either direction.,,,0,Disorientation,,Medium
+791,Potential Process Crash or Stop for Server,Denial Of Service,L0: Clinic,networked_telemetry,Needs Investigation,"Server crashes, halts, stops or runs slowly; in all cases violating an availability metric.",,,0,Disorientation,,Medium
+788,Cross Site Scripting,Tampering,L0: Clinic,networked_telemetry,Needs Investigation,The web server 'Server' could be a subject to a cross-site scripting attack because it does not sanitize untrusted input.,,"PII
+Sytem fingerprint data
+VR sensory data
+Application data
+Financial data
+Social activity
+Logging & auditing",7,Disorientation,Upsetting,Very High
+909,Weak Authentication Scheme,Information Disclosure,L0: Clinic,haptic_controls,Needs Investigation,"Custom authentication schemes are susceptible to common weaknesses such as weak credential change management, credential equivalence, easily guessable credentials, null credentials, downgrade authentication or a weak credential change management system. Consider the impact and potential mitigations for your custom authentication scheme.",,,0,,,None
+798,External Entity Network device Potentially Denies Receiving Data,Repudiation,L0: Clinic,networked_content,Needs Investigation,"Network device claims that it did not receive data from a process on the other side of the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.",,"PII
+Sytem fingerprint data
+VR sensory data
+Application data
+Financial data
+Social activity
+Logging & auditing",7,Discomfort,,High
+797,Spoofing of the Network device External Destination Entity,Spoofing,L0: Clinic,networked_content,Needs Investigation,Network device may be spoofed by an attacker and this may lead to data being sent to the attacker's target instead of Network device. Consider using a standard authentication mechanism to identify the external entity.,,"PII
+Sytem fingerprint data
+VR sensory data
+Application data
+Financial data
+Social activity
+Logging & auditing",7,,,High
+903,XML DTD and XSLT Processing,Tampering,L0: Clinic,networked_telemetry,Needs Investigation,"If a dataflow contains XML, XML processing threats (DTD and XSLT code execution) may be exploited.",,"PII
+Sytem fingerprint data
+VR sensory data
+Application data
+Financial data
+Social activity
+Logging & auditing",7,Disorientation,Inconvenient,Very High
+795,Elevation by Changing the Execution Flow in Server,Elevation Of Privilege,L0: Clinic,networked_telemetry,Needs Investigation,An attacker may pass data into Server in order to change the flow of program execution within Server to the attacker's choosing.,,,0,Disorientation,Upsetting,Medium
+780,Elevation Using Impersonation,Elevation Of Privilege,L0: Clinic,local_networked_content,Needs Investigation,Meta Quest 2 may be able to impersonate the context of Network device in order to gain additional privilege.,,,0,,,None
+911,Collision Attacks,Tampering,L0: Clinic,haptic_controls,Needs Investigation,"Attackers who can send a series of packets or messages may be able to overlap data. For example, packet 1 may be 100 bytes starting at offset 0. Packet 2 may be 100 bytes starting at offset 25. Packet 2 will overwrite 75 bytes of packet 1. Ensure you reassemble data before filtering it, and ensure you explicitly handle these sorts of cases.",,,0,Disorientation,,Medium
+910,Replay Attacks,Tampering,L0: Clinic,haptic_controls,Needs Investigation,Packets or messages without sequence numbers or timestamps can be captured and replayed in a wide variety of ways. Implement or utilize an existing communication protocol that supports anti-replay techniques (investigate sequence numbers before timers) and strong integrity.,,,0,Disorientation,,Medium
+912,Replay Attacks,Tampering,L0: Clinic,control_commands,Needs Investigation,Packets or messages without sequence numbers or timestamps can be captured and replayed in a wide variety of ways. Implement or utilize an existing communication protocol that supports anti-replay techniques (investigate sequence numbers before timers) and strong integrity.,,,0,Disorientation,,Medium
+913,Collision Attacks,Tampering,L0: Clinic,control_commands,Needs Investigation,"Attackers who can send a series of packets or messages may be able to overlap data. For example, packet 1 may be 100 bytes starting at offset 0. Packet 2 may be 100 bytes starting at offset 25. Packet 2 will overwrite 75 bytes of packet 1. Ensure you reassemble data before filtering it, and ensure you explicitly handle these sorts of cases.",,,0,Disorientation,,Medium
+789,Potential Data Repudiation by Server,Repudiation,L0: Clinic,networked_telemetry,Needs Investigation,"Server claims that it did not receive data from a source outside the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.",,,0,Disorientation,,Medium
+793,Elevation Using Impersonation,Elevation Of Privilege,L0: Clinic,networked_telemetry,Not Applicable,Server may be able to impersonate the context of Network device in order to gain additional privilege.,Not possible/highly unlikely,,,,,
+778,Elevation Using Impersonation,Elevation Of Privilege,L0: Clinic,user_sensor_data,Not Applicable,Meta Quest 2 may be able to impersonate the context of Human User in order to gain additional privilege.,Not possible/highly unlikely,,,,,
+863,Elevation Using Impersonation,Elevation Of Privilege,L0: Clinic,control_commands,Not Applicable,Meta Quest 2 may be able to impersonate the context of Meta Quest Touch controllers in order to gain additional privilege.,Not possible,,,,,
+862,Elevation Using Impersonation,Elevation Of Privilege,L0: Clinic,haptic_controls,Not Applicable,Meta Quest Touch controllers may be able to impersonate the context of Meta Quest 2 in order to gain additional privilege.,Not possible/highly unlikely,,,,,
+865,Elevation Using Impersonation,Elevation Of Privilege,L0: Clinic,controller_inputs,Not Applicable,Meta Quest Touch controllers may be able to impersonate the context of Human User in order to gain additional privilege.,Not possible,,,,,
+794,Server May be Subject to Elevation of Privilege Using Remote Code Execution,Elevation Of Privilege,L0: Clinic,networked_telemetry,Not Applicable,Network device may be able to remotely execute code for Server.,It is assumed the network device is not sophisticated enough,,,,,
